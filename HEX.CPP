@@ -33,21 +33,19 @@ case('f'):{strcat(a,"1111");break; }
 i++;
 }
 puts(a);
-j=strlen(a);
-for(i=j;i>=j-4;i--)
+j = strlen(a);
+for (i = j;i >= 0;i--)
 {
-if(a[i]=='1')
-{
-count++;
+	if (a[i] == '0')
+	{
+		a[i] = '1';
+	}
+	else
+	{
+		a[i] = '0';
+	}
 }
-}
-if(count>=3)
-{
-printf("on");
-}else
-{
-printf("off");
-}
+puts(a);
 
 
 
