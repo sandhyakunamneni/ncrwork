@@ -1,37 +1,49 @@
-class Time
+#include<iostream>
+using namespace std;
+class polar
 {
-	int hr;
-	int min;
-	int sec;
+	static int count;
 public:
-	Time()
+	polar()
 	{
-		hr = min = sec = 0;
+
+		count++;
+		//cout << count << endl;
 	}
-	Time(int h, int m, int s)
+	polar(int p)
 	{
-		hr = h;
-		min = m;
-		sec = s;
+		count++;
+		//cout << count << endl;
 	}
-	void add_time(Time t1, Time t2)
+	polar(int x, int y)
 	{
-		hr = t1.hr + t2.hr;
-		min = t1.min + t2.min;
-		sec = t1.sec + t2.sec;
+		count++;
+		//cout << count << endl;
 	}
-	void display()
+	polar(polar &c)
 	{
-		cout << hr<<":"<<min<<":"<<sec;
+		count++;
+		//cout << count << endl;
+	}
+	~polar()
+	{
+		count--;
+		cout << count << endl;
 	}
 };
-
-int main()
+int polar::count;
+int  main()
 {
-	Time t1(5, 5, 14),t2(4,5,6),t3;
-	
-	t3.add_time(t1, t2);
-	t3.display();
-	getchar();
-	return 0;
+	polar p1;
+	polar p2(5);
+	polar p3(3, 2);
+	{
+		polar p4(2, 3);
+	}
+	polar p5(p1);
+	{
+		polar p6(p1);
+	}
+	int i;
+	cin >> i;
 }

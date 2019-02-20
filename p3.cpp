@@ -1,45 +1,46 @@
 #include<iostream>
 using namespace std;
-class Complex
+class student
 {
-	float real, imag;
+	char name[30];
+	int salary;
+
 public:
-	Complex()
+	void get_data()
 	{
-		real = 0;
-		imag = 0;
+		cin >> name;
+		cin >> salary;
+
 	}
-	Complex(float r)
-	{
-		real = r;
-		imag = r;
-	} 
-	Complex(float r, float i)
-	{
-		real = r;
-		imag = i;
-	}
-	friend void addcomplex(Complex &, Complex &);
-	friend void mulcomplex(Complex &, Complex &);
+	friend  ostream& operator<<(ostream& cout, student s);
+
+	friend void get_result(student[]);
 };
-void addcomplex(Complex &c1, Complex &c2)
+
+ostream& operator<<(ostream& cout, student s)
 {
-	float real, imag;
-	real = c1.real + c2.real;
-	imag = c1.imag + c2.imag;
-	cout << "result :" << real <<","<< imag << endl;
+	cout << s.name << endl;
+	cout << s.salary << endl;
+
+
+	return cout;
+
 }
-void mulcomplex(Complex &c1, Complex &c2)
+
+int main()
 {
-	float real, imag;
-	real = (c1.real*c2.real)-(c1.imag*c2.imag);
-	imag = (c1.real*c2.imag) + (c1.imag*c2.real);
-	cout << "result :" << real << "," << imag << endl;
+	student s1[2];
+	int i;
+	for (i = 0;i < 2;i++)
+	{
+		s1[i].get_data();
+	}
+	for (i = 0;i < 2;i++)
+	{
+		cout << s1[i] << endl;
+	}
+	system("pause");
+	return 0;
 }
-void main()
-{
-	Complex c1(3, 4),c2(7, 1),c3;
-	addcomplex(c1, c2);
-	mulcomplex(c1,c2);
-	getchar();
-}
+
+Displaying p_4.cpp.

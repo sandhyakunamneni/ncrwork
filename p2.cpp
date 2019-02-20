@@ -1,62 +1,63 @@
 #include<iostream>
-#include<cstring>
 using namespace std;
-class Student {
-	char *sptr;
-	int marks[3];
-	char gradee;
-	float avg;
+class Student
+{
+	int rollno;char name[20];char grade;int marks[3];int tmarks;
 public:
-	void set_Data(char* studentName,char grade, int marks1,int marks2, int marks3)
-	{
-		int len;
-		len = strlen(studentName);
-		sptr = (char *)malloc(sizeof(char)*(len + 1));
-		strcpy_s(sptr,sizeof(sptr), studentName);
-		marks[0] = marks1;
-		marks[1] = marks2;
-		marks[2] = marks3;
-		//gradee = grade;
-
-	}
-	void calculateAverage() 
-	{
-		int i, sum = 0;
-		for (i = 0; i < 3; i++)
-		{
-			sum = sum + marks[i];
-		}
-		avg =(float) sum / i;
-		
-
-	}
-	void ComputeGrade()
-	{
-		if (avg > 60)
-			gradee = 'A';
-		else if (avg > 50&&avg<60)
-			gradee = 'B';
-		else if (avg > 40&&avg<50)
-		gradee = 'C';
-		else gradee = 'F';
-		
-	}
-	void display()
-	{
-		cout << "name:" << *sptr << endl;
-		cout << "avg:" << avg << endl;
-			cout << "grade is:" << gradee << endl;
-			
-	}
+	friend istream& operator >>(istream &cin, Student &s);
+	friend ostream& operator <<(ostream &cin, Student &s);
+	friend void caltot(Student s[], int n);
 };
+istream& operator >> (istream &cin, Student &s)
+{
+	int i;
+	cin >> s.rollno;
+	cin >> s.name;
+	for (i = 0; i < 3; i++)
+	{
+		cin >> s.marks[i];
+	}
+	s.tmarks=0;return cin;
+}
+ostream& operator >> (ostream &cin, Student &s)
+{
+	int i;
+	cout << s.name;cout << s.rollno;
+	for (i = 0; i < 3; i++)
+	{ cout << s.marks[i];}
+	return cout;
+}
+void caltot(Student s[], int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		cout >> s[i];
+		for (int j = 0; j < n; j++)
+		{
+			s[i].tmarks = s[i].tmarks + s[i].marks[j];
+		}
+		if (s[i].tmarks > 260)
+		{
+			s[i].grade = 'A';
+			cout << s[i].grade; cout << s[i].tmarks; cout << endl;
+		}
+		if (s[i].tmarks > 200 && s[i].tmarks < 260)
+		{
+			s[i].grade = 'B';
+			cout << s[i].grade; cout << s[i].tmarks; cout << endl;
+		}
+		if (s[i].tmarks < 200)
+		{
+			s[i].grade = 'F';
+			cout << s[i].grade; cout << s[i].tmarks; cout << endl;
+		}
+	}
+}
 void main()
 {
-	Student s1;
-	s1.set_Data("sai",' ',20,30,40);
-	s1.calculateAverage();
-	s1.ComputeGrade();
-	s1.display();
-	getchar();
-
-
+	int i; Student s[3];
+	for (int i = 0; i < 3; i++)
+	{cin >> s[i];}
+	caltot(s, 3);
+	cin >> i;
 }
