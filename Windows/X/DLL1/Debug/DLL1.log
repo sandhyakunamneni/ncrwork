@@ -1,0 +1,8 @@
+﻿  add.cpp
+  div.cpp
+e:\windows\files\x\dll1\div.cpp(6): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  mul.cpp
+  sub.cpp
+  Generating Code...
+     Creating library E:\windows\files\X\Debug\DLL1.lib and object E:\windows\files\X\Debug\DLL1.exp
+  DLL1.vcxproj -> E:\windows\files\X\Debug\DLL1.dll

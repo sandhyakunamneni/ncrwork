@@ -1,0 +1,4 @@
+﻿  waitformultiple.cpp
+e:\windows\files\x\prog25\waitformultiple.cpp(25): warning C4326: return type of 'main' should be 'int' instead of 'void'
+e:\windows\files\x\prog25\waitformultiple.cpp(26): warning C4101: 'thID2': unreferenced local variable
+  prog25.vcxproj -> E:\windows\files\X\Debug\prog25.exe

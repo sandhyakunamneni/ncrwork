@@ -1,0 +1,5 @@
+﻿  threadterminate.cpp
+e:\windows\files\x\threads15\threadterminate.cpp(23): warning C4101: 'arr_hand': unreferenced local variable
+e:\windows\files\x\threads15\threadterminate.cpp(21): warning C4101: 'thID2': unreferenced local variable
+e:\windows\files\x\threads15\threadterminate.cpp(22): warning C4101: 'hThread2': unreferenced local variable
+  THREADS15.vcxproj -> E:\windows\files\X\Debug\THREADS15.exe

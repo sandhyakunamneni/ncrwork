@@ -1,0 +1,6 @@
+﻿  strrev.c
+e:\windows\files\x\c\strrev.c(6): warning C4013: 'gets' undefined; assuming extern returning int
+e:\windows\files\x\c\strrev.c(7): warning C4013: 'strlen' undefined; assuming extern returning int
+e:\windows\files\x\c\strrev.c(8): warning C4013: 'reverse' undefined; assuming extern returning int
+e:\windows\files\x\c\strrev.c(29): warning C4715: 'reverse': not all control paths return a value
+  C.vcxproj -> E:\windows\files\X\Debug\C.exe

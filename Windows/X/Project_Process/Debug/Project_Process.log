@@ -1,0 +1,7 @@
+﻿  process.cpp
+e:\windows\files\x\project_process\process.cpp(7): warning C4326: return type of 'main' should be 'int' instead of 'void'
+e:\windows\files\x\project_process\process.cpp(21): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'HANDLE'
+e:\windows\files\x\project_process\process.cpp(23): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'HANDLE'
+e:\windows\files\x\project_process\process.cpp(33): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'HANDLE'
+e:\windows\files\x\project_process\process.cpp(35): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'HANDLE'
+  Project_Process.vcxproj -> E:\windows\files\X\Debug\Project_Process.exe

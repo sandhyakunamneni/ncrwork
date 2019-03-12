@@ -1,0 +1,11 @@
+﻿  resetevent.cpp
+e:\windows\files\x\prog26\resetevent.cpp(33): warning C4778: 'printf' : unterminated format string '%\n'
+e:\windows\files\x\prog26\resetevent.cpp(33): warning C4474: 'printf' : too many arguments passed for format string
+  e:\windows\files\x\prog26\resetevent.cpp(33): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+e:\windows\files\x\prog26\resetevent.cpp(40): warning C4778: 'printf' : unterminated format string '%\n'
+e:\windows\files\x\prog26\resetevent.cpp(40): warning C4474: 'printf' : too many arguments passed for format string
+  e:\windows\files\x\prog26\resetevent.cpp(40): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+e:\windows\files\x\prog26\resetevent.cpp(47): warning C4778: 'printf' : unterminated format string '%\n'
+e:\windows\files\x\prog26\resetevent.cpp(47): warning C4474: 'printf' : too many arguments passed for format string
+  e:\windows\files\x\prog26\resetevent.cpp(47): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  Prog26.vcxproj -> E:\windows\files\X\Debug\Prog26.exe

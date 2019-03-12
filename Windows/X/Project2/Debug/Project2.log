@@ -1,0 +1,8 @@
+﻿  writefile.cpp
+e:\windows\files\x\project2\writefile.cpp(7): warning C4326: return type of 'wmain' should be 'int' instead of 'void'
+e:\windows\files\x\project2\writefile.cpp(30): warning C4477: 'wprintf' : format string '%S' requires an argument of type 'char *', but variadic argument 1 has type 'LPCWSTR'
+  e:\windows\files\x\project2\writefile.cpp(30): note: consider using '%lS' in the format string
+  e:\windows\files\x\project2\writefile.cpp(30): note: consider using '%llS' in the format string
+  e:\windows\files\x\project2\writefile.cpp(30): note: consider using '%LS' in the format string
+  e:\windows\files\x\project2\writefile.cpp(30): note: consider using '%wS' in the format string
+  Project2.vcxproj -> E:\windows\files\X\Debug\Project2.exe

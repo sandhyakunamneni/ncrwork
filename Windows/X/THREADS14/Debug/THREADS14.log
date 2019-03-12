@@ -1,0 +1,6 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (THREADS14.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  threadsterminate.cpp
+e:\windows\files\x\threads14\threadsterminate.cpp(20): warning C4101: 'arr_hand': unreferenced local variable
+e:\windows\files\x\threads14\threadsterminate.cpp(18): warning C4101: 'thID2': unreferenced local variable
+e:\windows\files\x\threads14\threadsterminate.cpp(19): warning C4101: 'hThread2': unreferenced local variable
+  THREADS14.vcxproj -> E:\windows\files\X\Debug\THREADS15.exe

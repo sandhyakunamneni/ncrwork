@@ -1,0 +1,3 @@
+﻿  mylibexe.cpp
+e:\windows\files\x\dlle\mylibexe.cpp(4): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  DLLE.vcxproj -> E:\windows\files\X\Debug\DLLE.dll

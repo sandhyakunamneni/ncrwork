@@ -1,0 +1,6 @@
+﻿  singlevent.cpp
+e:\windows\files\x\prog24\singlevent.cpp(14): warning C4326: return type of 'main' should be 'int' instead of 'void'
+e:\windows\files\x\prog24\singlevent.cpp(17): warning C4101: 'arr_hand': unreferenced local variable
+e:\windows\files\x\prog24\singlevent.cpp(15): warning C4101: 'thID2': unreferenced local variable
+e:\windows\files\x\prog24\singlevent.cpp(16): warning C4101: 'hTh2': unreferenced local variable
+  prog24.vcxproj -> E:\windows\files\X\Debug\prog24.exe

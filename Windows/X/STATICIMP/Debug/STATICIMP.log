@@ -1,0 +1,3 @@
+﻿  staticimp.cpp
+e:\windows\files\x\staticimp\staticimp.cpp(6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  STATICIMP.vcxproj -> E:\windows\files\X\Debug\STATICIMP.exe
